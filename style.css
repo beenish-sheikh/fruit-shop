@@ -1,4 +1,4 @@
-                header {
+        header {
             color: white;
             background-image: linear-gradient(#434745, #5f677c, #434745);
             width: 100%;
@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 3em;
+            height: 2.5em;
             width: 100%;
             color: black;
             background: white;
@@ -30,8 +30,9 @@
         
         #total {
             display: flex;
+            flex-direction: row;
             justify-content: center;
-            height: 4em;
+            height: 3em;
             width: 100%;
             color: black;
             background: #efe2cc;
@@ -47,12 +48,71 @@
             color: red;
             width: 1em;
             height: 1em;
-            {
-                .Fruits p {
-                    background: green;
-                    color: white;
-                    height: 7px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                }
+            cursor: text;
+            text-align: start;
+        }
+        
+        #product {
+            /* display: flex; */
+            /* flex-direction: center;
+            justify-content: center;
+            align-items: column; */
+            background: linear-gradient(#434745, #5f677c, #434745);
+        }
+        
+        .fruits p {
+            color: white;
+            background: green;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            width: 18%;
+            margin-left: 3.5em;
+            margin-bottom: -15px;
+            border-radius: 5px;
+        }
+        
+        #pic img {
+            height: 140px;
+            width: 40%;
+        }
+        
+        .img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            margin: 15px;
+            font-weight: 400;
+            width: 20%;
+        }
+        
+        .decrease {
+            margin-right: -35px;
+            border-radius: 23px 0 0 23px
+        }
+        
+        .increase {
+            margin-left: -8px;
+            border-radius: 0 23px 23px 0;
+            margin-bottom: 0%;
+        }
+        
+        .buy input {
+            text-align: center;
+            border: none;
+            margin-left: 30px;
+            width: 50px;
+            height: 22px;
+            padding: 0px 0px 0px 0px;
+            background-image: linear-gradient(#c8c7c7, white);
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
